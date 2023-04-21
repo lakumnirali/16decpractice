@@ -56,14 +56,14 @@ padding-right: 80px;
     position: absolute;
 }
 .back{
-/* margin: 5px 5px 0px 5px; */
+
 font-size: 148px;
 line-height: 129px;
 color: #3c54a0;
 font-weight: 400;
 font-family: "HVD Poster";
 text-align: center;
-margin-top: 5px;
+padding-left: 225px;
 }
 .to{
     font-size: 60px;
@@ -71,7 +71,8 @@ color: #c8206a;
 font-weight: 400;
 font-family: "HVD Poster";
 text-align: center;
-margin-left: 10px;
+margin-left: 350px;
+padding-top: 10px;
 }
 .school{
     font-size: 119px;
@@ -80,6 +81,8 @@ color: #3c54a0;
 font-weight: 400;
 font-family: "HVD Poster";
 text-align: center;
+padding-left:200px;
+margin-top: 5px;
 
 }
 .backtoschool{
@@ -88,10 +91,19 @@ text-align: center;
 }
 .bodytext{
    color: #c8206a; 
-   
   width:350px;
+  padding: 30px 0px 0px 260px;
 }
 .img1{
     padding-top: 150px;
- 
+ margin-right: 89px;
+}
+/* section-2 */
+.letsgo{
+    color: #c8206a;  
+    font-family: "HVD Poster"; 
+    font-size: 148px;
+    line-height: 104px;
+  text-align: center;
+  padding-top: 6px;
 }
