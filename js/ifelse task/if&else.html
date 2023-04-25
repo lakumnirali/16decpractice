@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-   <script>
-    confirm("check your class?")
- let rollno = prompt("enter your rollno.")
-console.log(rollno)
+    <script>
+        // example-1 start
+        //     confirm("check your class?")
+        //  let rollno = prompt("enter your rollno.")
+        // console.log(rollno)
 
-if (rollno >=1 && rollno <=50) {
-  if (rollno>=1 && rollno<=10) {
-      alert (" rollno 1 to 10 class=A");
-    }else if (rollno>=11 && rollno<=20) {
-      alert (" rollno 11 to 20 class=B");
-  }else if (rollno>=21 && rollno<=30) {
-    alert (" rollno 21 to 30 class=C");
-  }else if (rollno>=31 && rollno<=40) {
-    alert (" rollno 31 to 40 class=D");
-  }else if (rollno>=41 && rollno<=50) {
-    alert (" rollno 41 to 50 class=E");
-  }
-} else {
-   alert ("your rollno is not in our school")
-}
+        // if (rollno >=1 && rollno <=50) {
+        //   if (rollno>=1 && rollno<=10) {
+        //       alert (" rollno 1 to 10 class=A");
+        //     }else if (rollno>=11 && rollno<=20) {
+        //       alert (" rollno 11 to 20 class=B");
+        //   }else if (rollno>=21 && rollno<=30) {
+        //     alert (" rollno 21 to 30 class=C");
+        //   }else if (rollno>=31 && rollno<=40) {
+        //     alert (" rollno 31 to 40 class=D");
+        //   }else if (rollno>=41 && rollno<=50) {
+        //     alert (" rollno 41 to 50 class=E");
+        //   }
+        // } else {
+        //    alert ("your rollno is not in our school")
+        // }
+        // example-1 end
 
-   </script> 
+        // example-2 start
+
+        let age = prompt("enter your age")
+        console.log(age);
+        if (age >= 0 && age <= 100){
+            if (age >= 0 && age <= 16) {
+                document.write("CHILD")
+            } else if (age >= 17 && age <= 30) {
+                document.write("YOUNG ADULTS")
+            }
+            else if (age >= 31 && age <= 45) {
+                document.write("MIDDLE-AGED ADULTS")
+            }
+            else if (age >= 45 && age <= 100) {
+                document.write("OLD-AGED ADULTS")
+            }
+        }
+            else {
+                alert("enter valid age")
+            }
+        
+
+                // example-2 end
+
+    </script>
 </body>
+
 </html>
