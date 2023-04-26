@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2><CEnter>//ADVANCE JAVASCRIPT//</CEnter></h2>
+<h1><center>MODULE: 1 Advance JavaScript</center></h1>
+<!-- question-1 -->
+<h3>1.	Write a program to Show an alert <br>
+    Ans:
+</h3>
+<h4>The alert() Method</h4>
+
+<p>Click the button to display an alert box.</p>
+
+<button onclick="myFunction()">Try it</button>
+<!-- alert example -->
+<script>
+    function myFunction() {
+        alert("Hello! I am an alert box!");
+    }
+    
+    </script>
+<!-- question-2 -->
+
+<h3>2. What will be the result for these expressions?<br>
+    Ans: 
+</h3>
+    1.  5 > 4 <br>
+    •	If we try to execute this expression in chrome or any other brower’s console we will get Boolean value “true”.
+    <br>
+    <br>
+    2.	“apple” > “pineapple”<br>
+    •	If we try to execute this expression in chrome or any other brower’s console we will get Boolean value “false”.
+    <br><br>
+    3.	"2" > "12”<br>
+    •	It returns with the Boolean value “true”.  <br><br>
+    
+    4.	undefined == null <br>
+    •	it returns with the true Boolean value. <br> <br>
+    
+    5.	undefined === null <br>
+    •	it returns with false Boolean value. <br> <br>
+    
+    6.	null == "\n0\n" <br>
+    •	it returns with false Boolean value.
+    <br><br>
+    
+    7.	null === +"\n0\n" <br>
+    •	it returns with false Boolean value. <br> <br>
+    <!-- question-3 -->
+    <h3>3. Will alert be shown? <br>
+        Ans: 
+    </h3>
+    <script>
+        "use strict";
+        if ("0") {
+            alert("Hello");
+        }
+        </script>
+        <p>This will definitely shows alert box. </p>
+        <!-- question-4 -->
+        <h3>4. What is the code below going to output? <br>
+            alert( null || 2 || undefined );<br>
+            Ans:
+        </h3>
+        <p>•	it shows 2 as an answer for given statement.</p>
+        <!-- question-5 -->
+        
+        <h3>5. The following function returns true if the parameter age is greater than18.  Otherwise, it asks for a confirmation and returns its result: <br>
+            Ans:
+        </h3>
+        
+        <script>
+            function checkAge(age) {
+                return (age > 18) ? true : confirm('Did parents allow you?');
+            }
+            function checkAge(age) {
+                return (age > 18) || confirm('Did parents allow you?');
+            }
+            </script>
+
+<p>description list — used to display name/value pairs such as terms and definitions</p>
+<!-- question-6 -->
+<h3>6. Replace Function Expressions with arrow functions in the code below:
+    Function ask(question, yes, no)
+    { if (confirm(question))yes();}
+    Else no();
+    }
+    ask("Do you agree?", function()
+    { alert("You agreed."); },
+    function() {
+    alert("You canceled the execution."); }
+    } <br>
+    Ans: 
+    </h3>
+    <script>
+        "use strict";
+
+         ask(question, yes, no) => {
+            if (confirm(question)) yes();
+            else no();
+        }
+
+        ask("Do you agree?"),
+            () => alert("You agreed."),
+            () => alert("You canceled the execution.")
+        
+    </script>
+<!-- question-7 -->
+<h3>  7. Write the code, one line for each action: <br>
+    a) Create an empty object user. <br>
+    b) Add the property name with the value John. <br>
+    c) Add the property surname with the value Smith. <br>
+    d) Change the value of the name to Pete. <br>
+    e) Remove the property name from the object <br>
+    Ans: 
+</h3>
+<script>
+    
+    var user= {
+        firstName: "John",
+        surname: "Doe",
+    };
+    
+    user.firstName.value = "pete";
+    delete  user.firstName;
+    </script> 
+    <!-- question-8  -->
+    <h3>8. Is array copied?
+        let fruits = ["Apples", "Pear", "Orange"]; // push a new value into the "copy" 
+        let shoppingCart = fruits; shoppingCart.push("Banana"); // what's in fruits?
+        alert( fruits.length ); // ? <br>
+   Ans: 
+   </h3>
+   <p>The code is below</p>
+   <script>
+    let fruits = ["Apples", "Pear", "Orange"];
+    fruitsCopy = [];
+
+    for (i = 0; i < fruits.length; i++) {
+      fruitsCopy[i] = fruits[i];
+    }
+
+    fruitsCopy.push('Mango');
+
+    let shoppingCart = fruits;
+
+    shoppingCart.push('Banana');
+
+    console.log( fruits , shoppingCart , fruitsCopy);
+    alert(fruits.lenght);
+    </script>
+<p>Fruits length will be 4 and shoppingCart and fruits both has a same value.</p>
+<!-- question-9 -->
+<h3>
+    9. Map to names
+    let john = { name: "John", age: 25 }; 
+    let pete = { name: "Pete", age: 30 }; 
+    let mary = { name: "Mary", age: 28 }; 
+    let users = [ john, pete, mary ];
+    let names = /* ... your code */ 
+    alert( names ); // John, Pete, Mary
+    <br>
+    Ans: 
+    </h3>
+    <script>
+        let john = { name: "John", age: 25 };
+        let pete = { name: "Pete", age: 30 };
+        let mary = { name: "Mary", age: 28 };
+        let users = [john, pete, mary];
+        let names = users.map(name);
+        function name(item){
+          return [item.name].join("");
+        }
+        console.log(names);
+        alert(names)
+        </script>
+        <!-- question-10 -->
+        <h3>10. Map to objects
+            let john = { name: "John", surname: "Smith", id: 1 }; 
+            let pete = { name: "Pete", surname: "Hunt", id: 2 };
+            let mary = { name: "Mary", surname: "Key", id: 3 };
+            let users = [ john, pete, mary ]; 
+            let usersMapped = /* ... your code ... */
+            /*
+            usersMapped = [
+            { fullName: "John Smith", id: 1 },
+            { fullName: "Pete Hunt", id: 2 },
+            { fullName: "Mary Key", id: 3 }
+            ]
+            */ 
+            alert( usersMapped[0].id ) // 1
+            alert( usersMapped[0].fullName ) // John Smith <br>
+            Ans:
+        </h3> 
+            let john = { name: "John", surname: "Smith", id: 1 }; <br>
+            let pete = { name: "Pete", surname: "Hunt", id: 2 };<br>
+            let mary = { name: "Mary", surname: "Key", id: 3 };<br>
+            <br><br>
+            let users = [ john, pete, mary ]; <br> <br>
+            
+            let usersMapped = users.map(user => ({
+                fullName: `${user.name} ${user.surname}`,
+                id: user.id
+            }));<br><br>
+            
+            alert( usersMapped[0].id ); // 1 <br>
+            alert( usersMapped[0].fullName ); // John Smith
+            <!-- question-11 -->
+            <h3>11.  Sum the properties There is a salaries object with arbitrary number of salaries. Write the function sumSalaries(salaries) that returns the sum of all salaries using Object.values and the for..of loop.If salaries is empty, then the result must be 0.
+                
+
+                let salaries = {
+                "John": 100,
+                "Pete": 300,
+                "Mary": 250
+                };
+                alert( sumSalaries(salaries) ); // 650 <br>
+                Ans:
+                </h3>
+                <script>
+                    let salaries = {
+                      John: 100,
+                      Pete: 300,
+                      Mary: 250,
+                    };
+                    const ss = Object.values(salaries);
+                  
+                    function sumSalaries(ss) {
+                        let sum =0;
+                      
+                          
+                          for (const item of ss) {
+                              sum+=item
+                          }
+                          alert(sum);
+                    }
+              
+                    sumSalaries(ss)
+                    
+                    </script>
+              <!-- question-12 -->
+              <h3>12. Destructuring assignment We have an object: Write the Destructuring assignment that reads: <br>
+                a) Name property into the variable name. <br>
+                b) Year’s property into the variable age. <br>
+                c) isAdmin property into the variable isAdmin (false, if no such property) <br>
+                d) let user = { name: "John", years: 30}; <br>
+                
+                Ans: 
+                </h3> 
+              <script>let user = {
+  name: "John",
+  years: 30
+};
+
+let {name, years: age, isAdmin = false} = user;
+
+alert( name ); // John
+alert( age ); // 30
+alert( isAdmin ); // false
+</script>
+<!-- question-13 -->
+<h3>13. Turn the object into JSON and back Turn the user into JSON and then read it back into another variable.
+    user = { name: "John Smith", age: 35}; <br>
+    Ans:
+</h3>        
+<p>
+    Panding!!!!
+</p>  
+<!-- question-14 -->
+<h3>
+    14. Create a program to hide/show the password <br>
+        Ans:
+        </h3>   
+        <p>Click the radio button to toggle between password visibility:</p>
+        
+        Password:<input type="password" value="FakePSW" id="myInput"><br><br>
+        <input type="checkbox" onclick="myFunction()">Show Password
+        
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myInput");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            }
+            </script>
+         <!-- question-15 -->
+         <h3>15. Create a program that will select all the classes and loop over and whenever i click the button the alert should show
+             <br>  Ans.
+            </h3>
+            <div id="buttonsContainer"></div>
+            <script>
+                const buttonsContainer = document.getElementById("buttonsContainer");
+    
+                for (var i = 0; i < 5; i++) {
+                    const button = document.createElement("button");
+                    button.innerText = i;
+                    button.addEventListener("click", function () {
+                        console.log(i)
+                    })
+                    buttonsContainer.appendChild(button);
+                }
+                
+                </script>
+    
+    <!-- question-16 -->
+    <h3>16. Create a responsive header using proper JavaScript <br>
+        Ans:
+    </h3>
+    
+    <header class="header">
+        <div class="container">
+            <div class="row-wrap">
+                <div class="logo-wrap">
+                    <span class="logo">LOGO</span>
+                </div>
+                <div class="nav-wrap">
+                    <ul class="nav-list">
+                        <li class="active"><a href="#">About-us</a></li>
+                        <li><a href="#">Contact-us</a></li>
+                        <li class="with-submenu">
+                            <a href="#">Blog</a>
+                            <div class="submenu">
+                                <ul class="submenu-inner">
+                                    <li><a href="#">Link1</a></li>
+                                    <li><a href="#">Link2</a></li>
+                                    <li><a href="#">Link3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+    </div>
+        </div>
+    </header>
+    <div class="overlay"></div>
+    <script>
+        function header_adj() {
+            if ($(window).width() < 767) {
+                var header_height = $(".header").outerHeight();
+                $(".nav-wrap .nav-list").css({ "padding-top": header_height + "px" });
+            } else {
+                $(".nav-wrap .nav-list").css({ "padding-top": "0" });
+            }
+        }
+        function submenu_toggle() {
+            if ($(window).width() < 767) {
+                $(".nav-list li.with-submenu")
+                    .off()
+                    .click(function () {
+                        $(this).toggleClass("is-open");
+                        $(".submenu").slideToggle("slow");
+                    });
+            }
+        }
+  $(document).ready(function () {
+            header_adj();
+            submenu_toggle();
+            if ($(window).width() < 767) {
+                $(".hamburger").click(function () {
+                    $(this).toggleClass("is-active");
+                    $("body,html").toggleClass("sidebar-open");
+                    $(".nav-wrap").toggleClass("is-open");
+                });
+
+                $(".overlay").click(function () {
+                    $(".hamburger").removeClass("is-active");
+                    $("body,html").removeClass("sidebar-open");
+                    $(".nav-wrap").removeClass("is-open");
+                });
+            } else {
+                $(".hamburger").removeClass("is-active");
+                $("body,html").removeClass("sidebar-open");
+                $(".nav-wrap").removeClass("is-open");
+            }
+        });
+        $(window).on("resize", function () {
+            header_adj();
+            submenu_toggle();
+            if ($(window).width() < 767) {
+                $(".hamburger").click(function () {
+                    $(this).toggleClass("is-active");
+                    $("body,html").toggleClass("sidebar-open");
+                    $(".nav-wrap").toggleClass("is-open");
+                });
+  $(".overlay").click(function () {
+                    $(".hamburger").removeClass("is-active");
+                    $("body,html").removeClass("sidebar-open");
+                    $(".nav-wrap").removeClass("is-open");
+                });
+            } else {
+                $(".hamburger").removeClass("is-active");
+                $("body,html").removeClass("sidebar-open");
+                $(".nav-wrap").removeClass("is-open");
+            }
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- question-17 -->
+    <h3>17. Create a form and validate using JavaScript <br>
+        Ans: 
+        </h3>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            form{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: antiquewhite;
+            }
+           
+          table{
+                width: 60%;
+                padding: 60px;
+            }
+            tr{
+                border-bottom: 1px solid black;
+            }
+            td{
+                width: 5%;
+                padding: 10px 20px;
+            }
+            .in_size{
+                width: 300px;
+                padding: 3px;
+            }
+            #btn{
+                padding: 10px;
+                background-color: green;
+                color: white;
+                cursor: pointer;
+                border: none;
+                border-radius: 5px;
+            }
+            
+    #address{
+                height: 100px;
+            }
+        </style>
+        <form action="aget-method.php" id= "user-form" method="get" >
+            <table >
+                <tr>
+                    <td><label>First Name:</label></td>
+                    <td><input type="text" id="firstname" class="in_size" name="field" autocomplete="off" autofocus="autofocus" required> <br><span id="firstNameCheck"></span></td>
+                </tr>
+                 <tr>
+                    <td><label>Last Name:</label></td>
+                    <td><input type="text" id="lastname" name="field" class="in_size" autocomplete="off" autofocus="autofocus" required> <br><span id="lastNameCheck"></span></td>
+                </tr>
+               <tr>
+                    <td><label>Email:</label></td>
+                    <td><input type="text" id="email" name="field" class="in_size" autocomplete="off" autofocus="autofocus" required>
+                        <br>   <span id="emailCheck"></span>  </td>
+                </tr>
+                 <tr>
+                    <td><label>Mobile:</label></td>
+                    <td><input type="tel" id="mobile" name="Mobile" class="in_size" autocomplete="off"  autofocus="autofocus" required> <br><span id="mobileCheck"></span></td>
+                </tr>
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td><input type="radio"  name="gender" >Male  &nbsp; <input type="radio"  name="gender" >Female &nbsp; <span id="genderCheck"></span></td>
+                    <td></td>
+                   
+                </tr>
+                <tr>
+                   <td><label >Date Of Birth:</label></td>
+                   <td><input type="date" class="in_size" ><br> </td>
+                </tr>
+                <tr>
+                    <td><label >Address:</label></td>
+                    <td><textarea name="address" id="address" class="in_size" autocomplete="off" autofocus="autofocus" required></textarea><br> <span id="addressCheck"></span></td>
+                </tr>
+                <tr>
+                    <td> <label>City:</label></td>
+                    <td> <input type="text" id="city" class="in_size" autocomplete="off" autofocus="autofocus" required>
+                        <br><span id="cityCheck"></span></td>
+                </tr>
+                <tr>
+                    <td> <label >Area Pin:</label></td>
+                    <td> <input type="text" id="pin" class="in_size"autocomplete="off" autofocus="autofocus" required> 
+                        <br>
+                    <span id="pinCheck"></span></td>
+                </tr>
+                <tr>
+                    <td> <label >State:</label></td>
+                    <td> <input type="text" id="state" class="in_size"autocomplete="off" autofocus="autofocus" required><br>
+                    <span id="stateCheck"  ></span></td>
+                </tr>
+                <tr>
+                    <td> <label >Qualification</label></td>
+                    <td> <select name="Qualification" id="Qualification" >
+                        <option value="Select Qualification">Select Qualification </option>
+                        <option value="B.com">B.com</option>
+                        <option value="B.sc">B.sc</option>
+                        <option value="B.E">B.E</option>
+                        <option value="B.A">B.A</option>
+                        <option value="">B.A</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label class="specialization" >Specialization</label></td>
+                    <td>
+                        <input type="radio" name="box" >Computer Science <br>
+                        <input type="radio" name="box" >Information Technology <br>
+                        <input type="radio" name="box" >Computer Architecture <br>
+                        <input type="radio" name="box" >Tele Communication
+                    </td>
+                </tr>
+                <tr>
+                    <td><Label>Password:</Label></td>
+                    <td><input type="password" id="password" class="in_size" autocomplete="off" autofocus="autofocus" required><br>
+                    <span id="pswCheck"></span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit"  onclick=" return validation()"value="Registered" id="btn">
+                </td>
+            </tr>
+        </table>
+      </form>
+<script>
+    var user= document.getElementById('firstname');
+    var userLast = document.getElementById('lastname');
+    var emailId = document.getElementById('email');
+    var tele = document.getElementById('mobile');
+    var ad = document.getElementById('address');
+    var town = document.getElementById('city');
+    var states = document.getElementById('state');
+    var pCode = document.getElementById('pin');
+    var psw = document.getElementById('password');
+    
+    user.addEventListener('blur', checkName);
+    userLast.addEventListener('blur', checkLname);
+    emailId.addEventListener('blur', checkEmail);
+    tele.addEventListener('blur', checkTel);
+    ad.addEventListener('blur', checkAd);
+    town.addEventListener('blur', checkTown);
+    pCode.addEventListener('blur', checkPin);
+    states.addEventListener('blur', checkState);
+    psw.addEventListener('blur', checkPSW);
+    function checkName() { 
+        var uName = user.value.trim();
+        if (uName == '') {
+            document.getElementById('firstNameCheck').innerHTML = "** Enter your name please..."
+            return false;
+        }
+        var exp = /^[A-Za-z]{3,6}$/;
+        if (!exp.test(uName)) {
+            document.getElementById('firstNameCheck').innerHTML = "** Only Alphabets, Numbers and Underscore and between 3 to 10 characters."
+        }
+        else{
+            document.getElementById('firstNameCheck').innerHTML = ""
+        }
+
+        return true;
+    }
+    function checkLname(){
+        var lName = userLast.value.trim();
+        if (lName == '') {
+            document.getElementById('lastNameCheck').innerHTML = "** Enter your last name please..."
+            return false;
+        }
+        var exp = /^[A-Za-z]{3,6}$/;
+        if (!exp.test(lName)) {
+            document.getElementById('lastNameCheck').innerHTML = "** Only Alphabets, Numbers and Underscore and between 3 to 10 characters."
+        }  else{
+            document.getElementById('lastNameCheck').innerHTML = ""
+        }
+        return true;
+    }
+    function checkEmail(){
+        var e_mail = emailId.value.trim();
+        if (e_mail == '') {
+            document.getElementById('emailCheck').innerHTML = "** Enter your valid email address..."
+            return false;
+        }
+        var exp =/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if (!exp.test(e_mail)) {
+            document.getElementById('emailCheck').innerHTML = "** invalid email"
+        }  else{
+            document.getElementById('emailCheck').innerHTML = ""
+        }
+        return true;
+    }
+    function checkTel(){
+        var telephone = tele.value.trim();
+        if (telephone == '') {
+            document.getElementById('mobileCheck').innerHTML = "** Enter your phone number..."
+            return false;
+        };
+        var exp =/^[6789]{1}[0-9]{9}$/;
+        if (!exp.test(telephone)) {
+            document.getElementById('mobileCheck').innerHTML = "**invalid mobile number..."
+        }  else{
+            document.getElementById('mobileCheck').innerHTML = ""
+        }
+        return true;
+    }
+    function checkAd(){
+        var ads = ad.value.trim();
+        if (ads == '') {
+            document.getElementById('addressCheck').innerHTML = "** Enter your address..."
+
+            return false;
+        }
+        var exp = /^[A-Za-z0-9]{8,}$/;
+        if (!exp.test(ads)) {
+            document.getElementById('addressCheck').innerHTML = "** invalid address"
+        }else{
+            document.getElementById('addressCheck').innerHTML = "";
+        }
+        return true;
+    }
+    function checkTown(){
+        var tw = town.value.trim();
+        if (tw== '') {
+            document.getElementById('cityCheck').innerHTML = "** Enter your city name..."
+            return false;
+        }
+        var exp = /^[A-Za-z]{2,}$/;
+        if(!exp.test(tw)){
+            document.getElementById('cityCheck').innerHTML = "invalid city name..."
+        }else{
+            document.getElementById('cityCheck').innerHTML = ""
+        }
+        return true;    
+    }
+    function checkPin(){
+        var code = pCode.value.trim();
+        if (code == '') {document.getElementById('pinCheck').innerHTML = "** Enter your are pincode..."
+            return false;
+        }
+        var exp =/^[1-9][0-9]{5}$/ ;
+        if (!exp.test(code)) {
+            document.getElementById('pinCheck').innerHTML = "** invalid pin"
+        }  else{
+            document.getElementById('pinCheck').innerHTML = ""
+        }
+        return true;
+    }
+    function checkState(){
+        var st = states.value.trim();
+        if (st == '') {
+            document.getElementById('stateCheck').innerHTML = "** Enter your state..."
+            return false;
+        }
+        var exp = /^[A_Za-z]{3,}$/
+        if(!exp.test(st)){
+            document.getElementById('stateCheck').innerHTML = "**invalid input..."
+        }else{
+            document.getElementById('stateCheck').innerHTML = ""   
+        }
+        return true;
+    }
+    function checkPSW(){
+        var pwd = psw.value.trim();
+        if (pwd == '') {
+            document.getElementById('pswCheck').innerHTML = "** Enter your password..."
+            return false;
+        }
+        var exp =/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+        if (!exp.test(pwd)) {
+            document.getElementById('pswCheck').innerHTML = "** Only Alphabets, Numbers and Underscore and between 3 to 10 characters."
+            return false;
+        }  else{
+            document.getElementById('pswCheck').innerHTML = ""
+        }
+        return true;
+    }
+    function validation(){
+        var inputs = document.getElementsByTagName("input");
+        console.log(inputs);
+        for(var i=0; i < inputs.length; i++){
+            if(inputs[i].value === '' && inputs[i].hasAttribute('required')){
+              alert('There are some required fields!');
+              return false;
+            }
+          }
+          form.submit()
+}
+        
+</script>
+<!-- question 18 -->
+<h3>18. Create a modal box using css and Js with three buttons <br>
+    Ans:
+    </h3>
+    <h2>Modal Example</h2>
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+    </div>
+    <script>
+  // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+                
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+                </script>
+                <!-- question 19 -->
+                
+                <h3>19. Use external js library to show slider <br>
+    Ans:
+    </h3>
+    <div class="ag-format-container">
+        <div class="layout">
+            <ul class="slider">
+                <li>
+                    <img src="https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_images/img-1098x549-15.jpg"
+                        alt="" />
+                </li>
+                <li>
+                    <img src="https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_images/img-1098x549-5.jpg"
+                        alt="" />
+                </li>
+                <li>
+                    <img src="https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_images/img-1098x549-1.jpg"
+                        alt="" />
+                </li>
+                <li>
+                    <img src="https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_images/img-1098x549-10.jpg"
+                        alt="" />
+                </li>
+                <li>
+                    <img src="https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_images/img-1098x549-4.jpg"
+                        alt="" />
+                </li>
+            </ul>
+        </div>
+    </div>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+        <symbol id="ei-arrow-left-icon" viewBox="0 0 50 50">
+            <path
+                d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z">
+            </path>
+            <path d="M25.3 34.7L15.6 25l9.7-9.7 1.4 1.4-8.3 8.3 8.3 8.3z"></path>
+            <path d="M17 24h17v2H17z"></path>
+        </symbol>
+
+        <symbol id="ei-arrow-right-icon" viewBox="0 0 50 50">
+            <path
+                d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z">
+            </path>
+            <path d="M24.7 34.7l-1.4-1.4 8.3-8.3-8.3-8.3 1.4-1.4 9.7 9.7z"></path>
+            <path d="M16 24h17v2H16z"></path>
+        </symbol>
+    </svg>
+    <script>
+        (function ($) {
+            $(function () {
+                $('.slider').slick({
+                        dots: true,
+                        prevArrow: '<a class="slick-prev slick-arrow" href="#" style=""><div class="icon icon--ei-arrow-left"><svg class="icon__cnt"><use xlink:href="#ei-arrow-left-icon"></use></svg></div></a>',
+                        nextArrow: '<a class="slick-next slick-arrow" href="#" style=""><div class="icon icon--ei-arrow-right"><svg class="icon__cnt"><use xlink:href="#ei-arrow-right-icon"></use></svg></div></a>',
+                        customPaging: function (slick, index) {
+                            var targetImage = slick.$slides.eq(index).find('img').attr('src');
+                            return '<img src=" ' + targetImage + ' "/>';
+                        }
+                    });
+
+
+                });
+            })(jQuery);
+            </script>
+<!-- question 20 -->
+<h3>20. Prevent the browser when i click the form submit button <br>
+    Ans:
+    </h3>
+    <form>
+        <input name="email" />
+        <input name="password" />
+        <input type="submit" />
+      </form>
+      </body>
+      <script>
+      const form = document.getElementById('form')
+      
+      form.addEventListener('submit', (event) => {
+        event.preventDefault()
+      </script>
+      
+
+
+
+</body>
+</html>
