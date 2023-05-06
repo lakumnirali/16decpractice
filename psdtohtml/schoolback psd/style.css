@@ -4,7 +4,7 @@
 }
 body{
     
-    background-color: #f0b52b;
+    /* width: 1365px; */
 }
 /* font start */
 @font-face{
@@ -15,6 +15,7 @@ body{
 .container{
     margin: 0 auto;
     width: 1365px;
+    background-color: #f0b52b;
 }
 #navbar{
     background-color:#3752a5;
@@ -72,7 +73,7 @@ font-weight: 400;
 font-family: "HVD Poster";
 text-align: center;
 margin-left: 350px;
-padding-top: 10px;
+top: 500px;
 }
 .school{
     font-size: 119px;
@@ -105,21 +106,40 @@ margin-top: 5px;
     font-size: 148px;
     line-height: 104px;
   text-align: center;
-  padding-top: 6px;
+  top: 325px;
+  right: 440px;
 }
-.letsgo{
-    color: #c8206a;  
-    font-family: "HVD Poster"; 
-    font-size: 148px;
+.backgroundimg > img {
+background-size: cover;
+width: 100%;
+}
+.TIMETOKNOWLEDGE{
+    color: #dadfee;  
+    font-size: 38px;
     line-height: 104px;
   text-align: center;
-  padding-top: 6px;
+  top: 430px;
+  right: 512px;
+  font-family: sans-serif;
 }
-.letsgo{
-    color: #c8206a;  
-    font-family: "HVD Poster"; 
-    font-size: 148px;
-    line-height: 104px;
-  text-align: center;
-  padding-top: 6px;
+.learnnow{
+    width: 290px;
+    border-radius: 70px;
+    background-color:#c8206a ;
+    border: 20px solid transparent;
+    text-align: center;
+    color: #eaeaea;
+    font-size: 35px;
+    top: 540px;
+    right: 572px;
+}
+.Title-here{
+    font-size: 42px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Josefin Sans";
+    text-align: left;
+    border-radius: 70px 70px 70px 0px;
+    background-color: #3752a5;
+
 }
