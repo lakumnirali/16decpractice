@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .slideranimation{
+        animation: slideranim 3s linear;
+        position: relative;
+     }
+     @keyframes slideranim {
+        from{ right: 1000px;;}
+        to{right: 0;}
+     }
+      .slider-img{
+        width: 70%;
+        display: block;
+   margin:0 auto;
+      }
+    </style>
+</head>
+
+
+<body>
+    <div class="slider">
+        <img src="./img/th (0).jpeg" class="slider-img" alt="">
+        <img src="./img/th (1).jpeg" class="slider-img" alt="">
+        <img src="./img/th (2).jpeg" class="slider-img" alt="">
+        <img src="./img/th (3).jpeg" class="slider-img" alt="">
+        <img src="./img/th (4).jpeg" class="slider-img" alt="">
+        <img src="./img/th (5).jpeg" class="slider-img" alt="">
+     
+    </div>
+    <script>
+    
+let sliderimgdata = document.getElementsByClassName("slider-img")
+let count = 0
+console.log(sliderimgdata);
+function slider() {
+    for (let index = 0; index < sliderimgdata.length; index++) {
+       console.log(sliderimgdata[index]);
+       sliderimgdata[index].style.display="none"
+       sliderimgdata[index].classList.remove(slideranimation)
+    }
+    if (count >= sliderimgdata.length) {
+        count = 0
+    }
+    console.log("count",count);
+    console.log("element",sliderimgdata[count]);
+    console.log("element",sliderimgdata[count].classList);
+    sliderimgdata[count].style.display="block"
+    sliderimgdata[count].classList.add("slideranimation")
+
+count++;
+setTimeout(slider,3000);
+}
+
+    </script>
+</body>
+</html>
