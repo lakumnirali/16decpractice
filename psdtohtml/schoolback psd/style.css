@@ -133,11 +133,59 @@ margin-top: 5px;
 }
 
 /* section-3 */
-
-
-.mainbox {
-    background-color: #3752a5;
-    border-radius: 200px 0px 200px 200px;
-    width: 300px;
-    height: 400px;
+.page3{
+    display: flex;
 }
+.mainbox{
+    background-color:#3752a5 ;
+    border-radius:150px 0px 150px 150px  ;
+    padding: 120px 0px 170px 50px;
+    /* width: 450px; */
+    margin-left: 50px;
+    
+}
+.thear{
+    /* width: 892px; */
+    margin-left: 50px;
+    font-size: 29px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Josefin Sans";
+    text-align: left;
+}
+.btext{
+    /* width: 330px; */
+    margin-left: 50px;
+    font-size: 29px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Josefin Sans";
+    text-align: left;
+}
+.allbox{
+    background-color:#3752a5 ;
+  
+    margin: 10px 10px 10px 10px;
+   
+    color: #ffffff;
+    width: 150px ;
+    height: 150px;
+}
+.smallbox{
+    display: flex;
+}
+/* .box-1{
+    width: 150px ;
+    height: 150px;
+}
+.box-2{
+    width: 150px ;
+    height: 150px;
+    
+}
+.box-3
+{width: 150px ;
+    height: 150px;}
+.box-4
+{width: 150px ;
+    height: 150px;} */
