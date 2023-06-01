@@ -133,16 +133,18 @@ margin-top: 5px;
 }
 
 /* section-3 */
-.page3{
+
+.third-box{
     display: flex;
+    padding-top: 200px;
 }
 .mainbox{
     background-color:#3752a5 ;
     border-radius:150px 0px 150px 150px  ;
     padding: 120px 0px 170px 50px;
-    /* width: 450px; */
-    margin-left: 50px;
-    
+   width: 482px;
+   height: 140px;
+    margin-left: 200px;
 }
 .thear{
     /* width: 892px; */
@@ -154,8 +156,8 @@ margin-top: 5px;
     text-align: left;
 }
 .btext{
-    /* width: 330px; */
-    margin-left: 50px;
+    width: 330px;
+    margin:20px 0px 0px 50px;
     font-size: 29px;
     color: #ffffff;
     font-weight: 400;
@@ -166,13 +168,16 @@ margin-top: 5px;
     background-color:#3752a5 ;
   
     margin: 10px 10px 10px 10px;
-   
+   border-radius: 50px 50px 50px 50px;
     color: #ffffff;
-    width: 150px ;
-    height: 150px;
+    width: 208px ;
+    height: 200px;
 }
 .smallbox{
     display: flex;
+flex-wrap: wrap;
+
+   
 }
 /* .box-1{
     width: 150px ;
