@@ -246,3 +246,30 @@
 .box:hover p{
     color:rgb(212, 199, 201) ;
 }
+/* section-6 */
+.page-6{
+    display: flex;
+}
+.page6text>p{
+    width: 479px;
+font-size: 21px;
+color: #3752a5;
+font-weight: 400;
+font-family: "Josefin Sans";
+}
+.page6text>h1{
+    font-size: 58px;
+color: #3752a5;
+font-weight: 700;
+font-family: "Josefin Sans";
+}
+.page6text>button{
+    font-size: 21px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Josefin Sans";
+text-align: center;
+border-radius: 20%;
+background-color: #3752a5;
+border: 15px solid #3752a5;
+}
