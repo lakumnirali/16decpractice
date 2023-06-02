@@ -176,6 +176,24 @@ display: block;
 .smallbox{
     display: flex;
 flex-wrap: wrap;
-margin-left: 5px;
-   
+margin-left: 5px;  
+}
+/* section-4 */
+.earthimg{
+    margin: auto 96px;
+    background-image: url(./asset/img/earth\ img.png);  
+    background-size: 1121px;
+    background-repeat: no-repeat;
+    height: 1000px;
+    padding:0px 0px 0px 0px ;
+}
+.mind{
+    font-size: 75px;
+color: #3752a5;
+font-weight: 700;
+font-family: "Josefin Sans";
+text-align: center;
+width: 695px;
+padding-top: 400px;
+padding-left: 235px;
 }
