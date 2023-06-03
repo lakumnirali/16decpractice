@@ -205,83 +205,122 @@
 .page-5 {
   display: flex;
   margin-left: 140px;
-  padding: 150px 0px 150px 0px ;
+  padding: 150px 0px 150px 0px;
 }
 .box {
-    width: 360px;
-    height: 435px;
-    margin: 30px 0px 0px 10px;
-    background-color: #ededed;
-    border-radius: 30px;
-    overflow: hidden;
-    transition: all 2s;
-    
+  width: 360px;
+  height: 435px;
+  margin: 30px 0px 0px 10px;
+  background-color: #ededed;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all 2s;
 }
-.box>h2 {
-    font-size: 34px;
-    color: #3752a5;
+.box > h2 {
+  font-size: 34px;
+  color: #3752a5;
   font-weight: 700;
   font-family: "Josefin Sans";
   text-align: center;
   background-color: #dfdfdf;
-  padding:7px 0px 0px 7px ;
+  padding: 7px 0px 0px 7px;
 }
 .box > p {
-    width: 360px;
-    transition: all 1s;
-    padding: 140px 0px 140px 0px;
-    font-size: 21px;
-    font-weight: 400;
+  width: 360px;
+  transition: all 1s;
+  padding: 140px 0px 140px 0px;
+  font-size: 21px;
+  font-weight: 400;
   color: #3752a5;
-    font-family: "Josefin Sans";
-    text-align: center;
+  font-family: "Josefin Sans";
+  text-align: center;
 }
-.box>h2:hover{
-    color:rgb(212, 199, 201) ;
-    background-color: #3c54a0;
+.box > h2:hover {
+  color: rgb(212, 199, 201);
+  background-color: #3c54a0;
 }
-.box:hover{
-    background-color: #3c54a0;
+.box:hover {
+  background-color: #3c54a0;
 }
-.box:hover p{
-    color:rgb(212, 199, 201) ;
+.box:hover p {
+  color: rgb(212, 199, 201);
 }
 /* section-6 */
-.page-6{
-    display: flex;
-    padding-top : 120px;
+.page-6 {
+  display: flex;
+  padding-top: 120px;
 }
-.page6img{
-   padding-left: 130px;
+.page6img {
+  padding-left: 130px;
+  margin-bottom: -4px;
 }
-.page6text>p{
-    width: 479px;
-font-size: 21px;
-color: #3752a5;
-font-weight: 400;
-font-family: "Josefin Sans";
-
-padding-top: 50px;
+.page6text > p {
+  width: 479px;
+  font-size: 21px;
+  color: #3752a5;
+  font-weight: 400;
+  font-family: "Josefin Sans";
+  
+  padding-top: 50px;
 }
 
-.page6text>h1{
-
-    font-size: 58px;
-color: #3752a5;
-font-weight: 700;
-font-family: "Josefin Sans";
-padding-top: 50px;
-
-
+.page6text > h1 {
+  font-size: 58px;
+  color: #3752a5;
+  font-weight: 700;
+  font-family: "Josefin Sans";
+  padding-top: 50px;
 }
-.readmore{
-    margin-top: 50px;
-    width: 150px;
-    border-radius: 50px;
-    background-color: #3752a5;
-    border: 10px solid transparent;
-    text-align: center;
-    color: #eaeaea;
-    font-size: 20px
-    
+.readmore {
+  margin-top: 50px;
+  width: 150px;
+  border-radius: 50px;
+  background-color: #3752a5;
+  border: 10px solid transparent;
+  text-align: center;
+  color: #eaeaea;
+  font-size: 20px;
 }
+.bg7 {
+  opacity: 0.902;
+  width: 1160px;
+  height: 527px;
+  border-radius: 83px;
+  background-color: #3752a5;
+}
+.page-7 {
+  background-image: url(./asset/img/pge7img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 770px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.child {
+  display: flex;
+  margin: 0 auto;
+}
+.row {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 220px 0px 0px 200px ;
+
+  
+}
+.col_25 {
+  width: 25%;
+}
+.col_25>h2{
+  color: #d3c333;
+  font-size: 75px;
+}
+.col_25>p{
+  font-size: 30px;
+  color: #d3c333;
+  padding-left: 55px;
+}
+
