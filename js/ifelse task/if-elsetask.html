@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let prize = prompt("enter chocolate prize")
+            console.log(prize);
+        if (prize >= 0 && prize <= 1000) {
+            if (prize >= 0 && prize <= 100) {
+                document.write("munch")
+            } else if (prize >= 100 && prize <= 200) {
+                document.write("perk")
+
+            } else if (prize >= 200 && prize <= 300) {
+                document.write("kitkat")
+            }
+            else if (prize >= 300 && prize <= 400) {
+                document.write("snickers")
+            }
+            else if (prize >= 400 && prize <= 500) {
+                document.write("5star")
+            }
+            else if (prize >= 600 && prize <= 700) {
+                document.write("milkbar")
+            }
+            else if (prize >= 800 && prize <= 900) {
+                document.write("dairymilk")
+            }
+            else if (prize >= 900 && prize <= 1000) {
+                document.write("ferrero rocher")
+            }
+
+        }
+        else {
+            alert("enter valid prize")
+        }
+    </script>
+</body>
+
+</html>
