@@ -6,6 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        function addition(a,...data) {
+           console.log("value of a is",a); 
+           console.log("value of data is",data); 
+        otherdata=0
+        data.forEach(val=>{
+            console.log(val);
+            otherdata+=val
+        });
+        console.log("otherdata",otherdata);
+        return a + otherdata
+        }
+        addition()
+        console.log(addition(580,840,78,45,));
+    </script>
 </body>
 </html>
