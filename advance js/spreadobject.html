@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function studentname(rit,ronit,krut,vraj) {
+            console.log(rit,ronit,krut,vraj);
+        }
+        let marks= {"a":"92","b":"89","c":"78","d":"90"}
+        console.log(Object.entries(marks));
+        studentname(...Object.entries(marks))
+    </script>
+</body>
+</html>
