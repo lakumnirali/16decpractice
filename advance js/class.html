@@ -27,9 +27,19 @@
             multiplication(...a){
                 console.log("call multiplication");
                 let result=1
-              a.forEach(data => {
-                result*=data
-              });
+                a.forEach(data => {
+                    result*=data
+                });
+                console.log("called mutiplication:",result);
+                
+           }
+            division(...a){
+                console.log("call division");
+                let result=8
+                a.forEach(data => {
+                    result/=data
+                });
+                console.log("called division:",result);
                 
            }
 
@@ -38,6 +48,7 @@
        ObjOfMyClass.addition(45,67)
        ObjOfMyClass.subtraction(50,30)
        ObjOfMyClass.multiplication(5,3,2)
+       ObjOfMyClass.division(2)
     </script>
 </body>
 </html>
