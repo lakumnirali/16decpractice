@@ -18,11 +18,13 @@
             }
             subtraction(f,...a){
                 console.log("call subtraction");
-                let result=0
-                a.forEach(data => {
-                    result=f-data
-                });
-                console.log("called subtraction:",result);
+                // let result=0
+                // a.forEach(data => {
+                // });
+            //   let  c = a[0];
+            //    let d = a[1];
+                let output = f-a[0]-a[1]-a[2]
+                console.log("called subtraction:",output);
             }
             multiplication(...a){
                 console.log("call multiplication");
@@ -46,7 +48,7 @@
         }
        let ObjOfMyClass = new ClassOfrit
        ObjOfMyClass.addition(45,67)
-       ObjOfMyClass.subtraction(50,30)
+       ObjOfMyClass.subtraction(50,10,5,6)
        ObjOfMyClass.multiplication(5,3,2)
        ObjOfMyClass.division(2,2)
     </script>
