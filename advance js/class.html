@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       class ClassOfrit{
+           addition(...a){
+               console.log("called");
+               let result=0
+               a.forEach(data => {
+                result+=data
+               });
+               console.log("called addition:",result);
+            }
+            subtraction(f,...a){
+                console.log("call subtraction");
+                let result=0
+                a.forEach(data => {
+                    result=f-data
+                });
+                console.log("called subtraction:",result);
+            }
+            multiplication(...a){
+                console.log("call multiplication");
+                let result=1
+              a.forEach(data => {
+                result*=data
+              });
+                
+           }
+
+        }
+       let ObjOfMyClass = new ClassOfrit
+       ObjOfMyClass.addition(45,67)
+       ObjOfMyClass.subtraction(50,30)
+       ObjOfMyClass.multiplication(5,3,2)
+    </script>
+</body>
+</html>
