@@ -7,15 +7,29 @@
 </head>
 <body>
     <script>
+        // function anotherfunction(clbk) {
+        //     console.log("my testing function" );
+        //     clbk() 
+        // }
+        // function newfunctionascallback(...nm) {
+        //     console.log("callback function called",nm);
+        // }
+        // anotherfunction(newfunctionascallback)
+        // newfunctionascallback(12,45)
         function anotherfunction(clbk) {
             console.log("my testing function" );
-            clbk() 
+            // clbk() 
+            const name="testing"
+            setTimeout(() => {
+                clbk(name)
+            }, 2000);
         }
-        function newfunctionascallback(...nm) {
+        function newfunctionascallback(nm) {
             console.log("callback function called",nm);
         }
         anotherfunction(newfunctionascallback)
-        newfunctionascallback(12,45)
+       
+
     </script>
 </body>
 </html>
