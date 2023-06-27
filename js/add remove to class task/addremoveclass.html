@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+        .paragraphclr{
+            background-color: #f5a5a5;
+            color: #500433;
+        }
     </style>
 </head>
 <body>
@@ -16,7 +19,24 @@
    <script>
     let paragraph = document.querySelector('p')
     document.getElementById("clickme").addEventListener("click",function name(params) {
-        paragraph.classList.add("")   
+        paragraph.classList.add("paragraphclr")   
+    })
+    document.getElementById("remove-class").addEventListener("click",function name(params) {
+        paragraph.classList.remove("paragraphclr")   
+    })
+    document.getElementById("toggle-class").addEventListener("click",function name(params) {
+       console.log( paragraph.classList);   
+       var classes = paragraph.className.replace(/\s{2,}/g,'').split(" ");
+       for(i = 0; i<classes.length; i++ ){
+        if (classes[i]=="paragraphclr") {
+            console.log("inside if");
+            paragraph.classList.remove("paragraphclr")
+        } else {
+            paragraph.classList.add("paragraphclr")
+            console.log("inside else");
+            
+        }
+       }
     })
    </script>
 </body>
