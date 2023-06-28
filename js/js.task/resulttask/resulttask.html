@@ -9,55 +9,54 @@
     display: flex;
     margin: 0 auto;
     align-items: center;
-    border: 2px  solid color(srgb red green blue);
+    /* border: 2px  solid rgb(105, 8, 8); */
 }
     </STyle>
 </head>
 <body>
     <p>High School Examination</p>
-   <form method="post" >
+   <form method="post" style="border: 1px solid salmon;">
     <table class="result">
     <th>
         <tr>
             <td>subject</td>
-            <td>Max.Marks</td>
             <td>Enter Marks</td>
         </tr>
     </th>
     <tr>
         <td><label for="hindi">HINDI</label></td>
         <td>
-            <input type="number" id="hindi" name="text" >
+            <input type="text" id="hindi" name="text" >
         </td>
     </tr>
     <tr>
         <td><label for="eng">ENGLISH</label></td>
         <td>
-            <input type="number" id="eng" name="text" >
+            <input type="text" id="eng" name="text" >
         </td>
     </tr>
     <tr>
         <td><label for="math">MATHEMATICS</label></td>
         <td>
-            <input type="number" id="math" name="text" >
+            <input type="text" id="math" name="text" >
         </td>
     </tr>
     <tr>
         <td><label for="science">SCIENCE</label></td>
         <td>
-            <input type="number" id="science" name="text" >
+            <input type="text" id="science" name="text" >
         </td>
     </tr>
     <tr>
         <td> <label for="social">SOCIAL SCIENCE</label></td>
         <td>
-            <input type="number" id="social" name="text" >
+            <input type="text" id="social" name="text" >
         </td>
     </tr>
     <tr>
         <td><label for="com">COMPUTER</label></td>
         <td>
-            <input type="number" id="com" name="text" >
+            <input type="text" id="com" name="text" >
         </td>
     </tr>
  
@@ -68,7 +67,16 @@
        document.getElementById("btn").addEventListener("click", function () {
            console.log("called");
            let hindi=document.getElementById("hindi").value
-           console.log(hindi);
+           let eng=document.getElementById("eng").value
+           let math=document.getElementById("math").value
+           let science=document.getElementById("science").value
+           let social=document.getElementById("social").value
+           let com=document.getElementById("com").value
+         let  addition=parseInt(hindi)+parseInt(eng)+parseInt(math)+parseInt(science)+parseInt(social)+parseInt(com)
+         console.log(addition);
+    
+            let Average = addition *100/600;
+        console.log(Average);
 })
    </script>
 </body>
