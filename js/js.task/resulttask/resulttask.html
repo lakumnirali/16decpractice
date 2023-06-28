@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>result task</title>
+    <STyle>
+.result{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    border: 2px  solid color(srgb red green blue);
+}
+    </STyle>
 </head>
 <body>
     <p>High School Examination</p>
-   <form method="post">
-    <table >
+   <form method="post" >
+    <table class="result">
     <th>
         <tr>
             <td>subject</td>
@@ -17,13 +25,51 @@
         </tr>
     </th>
     <tr>
-        <td>HINDI</td>
-        <td>100</td>
+        <td><label for="hindi">HINDI</label></td>
         <td>
-            <input type="text" id="hindi"  >
+            <input type="number" id="hindi" name="text" >
         </td>
     </tr>
+    <tr>
+        <td><label for="eng">ENGLISH</label></td>
+        <td>
+            <input type="number" id="eng" name="text" >
+        </td>
+    </tr>
+    <tr>
+        <td><label for="math">MATHEMATICS</label></td>
+        <td>
+            <input type="number" id="math" name="text" >
+        </td>
+    </tr>
+    <tr>
+        <td><label for="science">SCIENCE</label></td>
+        <td>
+            <input type="number" id="science" name="text" >
+        </td>
+    </tr>
+    <tr>
+        <td> <label for="social">SOCIAL SCIENCE</label></td>
+        <td>
+            <input type="number" id="social" name="text" >
+        </td>
+    </tr>
+    <tr>
+        <td><label for="com">COMPUTER</label></td>
+        <td>
+            <input type="number" id="com" name="text" >
+        </td>
+    </tr>
+ 
     </table>
+    <tr><input type="button" value="submit" id="btn"></tr>
    </form>
+   <script>
+       document.getElementById("btn").addEventListener("click", function () {
+           console.log("called");
+           let hindi=document.getElementById("hindi").value
+           console.log(hindi);
+})
+   </script>
 </body>
-</html>
+</html> 
