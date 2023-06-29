@@ -6,26 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>result task</title>
     <STyle>
-        body {
-            background-color: rgb(80, 163, 236);
-        }
-
-        /* .hse{
-  margin: 0 auto;
-} */
         .resulttask {
             width: 500px;
             margin: 0 auto;
-            /* margin-left: 69px; */
-               border:1px solid black ;
+            border: 1px solid rgb(38, 2, 43);
+            background-color: rgb(83, 59, 92);
         }
-        
-        .hse{
+
+        .hse {
             font-size: 37px;
         }
-        .sm{
+
+        .sm {
             font-size: 30px;
 
+        }
+
+        #btn {
+            color: white;
         }
     </STyle>
 </head>
@@ -36,7 +34,7 @@
         <table class="resulttask">
             <th>
                 <tr class="sm">
-                    <td >subject</td>
+                    <td>subject</td>
                     <td>Enter Marks</td>
                 </tr>
             </th>
@@ -78,12 +76,12 @@
             </tr>
 
         </table>
-        <tr><input type="button" value="submit" id="btn"></tr>
+        <tr><input type="button" value="submit" id="btn" class="resulttask"></tr>
 
     </form>
-    <div id="addition-result"></div>
-    <div id="persentage-result"></div>
-    <div class="result"></div>
+    <div id="addition-result" class="resulttask"></div>
+    <div id="persentage-result" class="resulttask"></div>
+    <div class="result resulttask"></div>
     <script>
         document.getElementById("btn").addEventListener("click", function () {
             console.log("called");
