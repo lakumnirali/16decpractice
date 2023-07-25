@@ -1,16 +1,32 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.container{
-    width: 1440px;
+.container {
+  width: 1240px;
+  overflow-x: hidden;
 }
-.navbar{
-    width: 144%;
-    /* display: block; */
+.pos-rel{
+    position: relative;
+}
+.pos-ab{
+    position: absolute;
+}
+.img1{
+    z-index: -1;
+    left: -50px;
+    right: 0;
+    top: 0;
+}
+.img1 img{
+    width: 130%;
 
-    background-image: url("./asset/navimg.png");
-    height: 100px;
-background-size: cover;
-margin: 0 auto;
+}
+.navbar {
+  /* width: 100%;
+  background-image: url("./asset/navimg.png");
+  height: 100px;
+  background-size: cover;
+background-position: 10px 10px;
+background-repeat: no-repeat; */
 }
