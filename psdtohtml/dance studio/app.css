@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1440px;
+}
+.navbar{
+    width: 144%;
+    /* display: block; */
+
+    background-image: url("./asset/navimg.png");
+    height: 100px;
+background-size: cover;
+margin: 0 auto;
+}
