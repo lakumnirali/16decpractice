@@ -1,46 +1,21 @@
 *{
     margin: 0;
     padding: 0;
-    background: #f8e7c4;
-    box-sizing: border-box;
 }
 .container{
-    width: 1300px;
-    /* width: 1440px; */
-    background-image: url(./assets/img/Rectángulo-1.png);
+    width: 1440px;
 }
-.logo{
-    padding-top: 70px;
-    margin-left: 70px;
-}
-.row{
+nav,.navitem>ul{
     display: flex;
 }
-.ml-a{
-    margin-left: auto;
+.group1{
+display: flex;
 }
-.toolbox{
-    margin-top: 90px;
-    padding-top: 36px;
-    background-color: #8e425c;
-    /* display: inline-block; */
-    border-radius: 30px;
+.navitem ,ul>li{
+    /* display: flex; */
+    display: block;
 }
-.navbar{
-    display: flex;
-    background-color:#8e425c;
-}
-.navbar li{
-    background-color:#8e425c;
-    display: inline-block;
-    padding:0px 65px 0px 18px;
-    text-align: center;
-    
-}
-.navbar li a{
-    padding-top: 20px;
-text-decoration: none;
-    background-color:#8e425c;
-    /* display: inline-block; */
-color: #fbebcb;
+li,a{
+    text-decoration: none;
+   font-size: 40px; 
 }
